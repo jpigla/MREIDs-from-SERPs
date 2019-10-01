@@ -1,6 +1,7 @@
-
 # Get MREIDs from Google SERPs
 ![GitHub](https://img.shields.io/github/license/jpigla/MREIDs-from-SERPs) ![node](https://img.shields.io/node/v/puppeteer) ![npm](https://img.shields.io/npm/v/puppeteer) ![GitHub last commit](https://img.shields.io/github/last-commit/jpigla/MREIDs-from-SERPs)
+
+<p align="center"><img src="https://user-images.githubusercontent.com/14932296/65971013-d6526800-e467-11e9-9ce3-322100f8a766.png" width=700></p>
 
 ## Requirements
 
@@ -39,7 +40,6 @@
 * We extract urls and names of entities from carousel
 * We open each url in new tab, wait for load-event and extract MREID
 * We clode Browser and export List to CSV / Terminal
-
 
 ## Help & Information
 
