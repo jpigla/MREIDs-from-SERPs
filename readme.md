@@ -14,12 +14,12 @@
 ## Installation
 
 1. Download & install NodeJS (https://nodejs.org/de/)
-1.1. Alternativ you can use Homebrew (https://brew.sh/index_de) to install node on Mac. Go to Terminal and paste `brew update && brew install node` to update **brew** and install **NodeJS**
+  * Alternativ you can use Homebrew (https://brew.sh/index_de) to install node on Mac. Go to Terminal and paste `brew update && brew install node` to update **brew** and install **NodeJS**
 2. Check if Node and NPM is installed properly
-2.1 Type `node -v` in Terminal to check NodeJS (You should see a version number)
-2.2. Type `npm -v` in Terminal to check NPM-Manager (You should see a version number)
+  * Type `node -v` in Terminal to check NodeJS (You should see a version number)
+  * Type `npm -v` in Terminal to check NPM-Manager (You should see a version number)
 3. Install required NPM-Packages
-3.1. Type `npm install puppeteer minimist` in Terminal
+  * Type `npm install puppeteer minimist` in Terminal
 
 ## Usage
 
