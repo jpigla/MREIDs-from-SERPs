@@ -44,6 +44,9 @@
 ## Help & Information
 
 * If something breaks or errors occur during runtime, please ask Philipp at hello@jpigla.de.
+* _This is **Version 1** of "Get MREIDs from Google SERPs"_
 
 
-_This is **Version 1** of "Get MREIDs from Google SERPs"_
+## License
+
+All assets and code are under the GPL v3 License unless specified otherwise.
