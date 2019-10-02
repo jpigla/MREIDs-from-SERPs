@@ -48,8 +48,11 @@
 
 ## Help & Information
 
-* If something breaks or errors occur during runtime, please ask Philipp at hello@jpigla.de.
-* _This is **Version 1** of "Get MREIDs from Google SERPs"_
+If something breaks or errors occur during runtime, please ask Philipp at hello@jpigla.de.
+
+**Version 1** (02.10.2019)
+* Initial Upload
+* Functional version
 
 
 ## License
