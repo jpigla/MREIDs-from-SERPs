@@ -3,6 +3,11 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/14932296/65971013-d6526800-e467-11e9-9ce3-322100f8a766.png" width=700></p>
 
+## ⚠ Disclaimer
+> This software is not authorized by Google and doesn't follow Google's
+> robots.txt. Scraping without Google explicit written permission is a violation of thei
+> terms and conditions on scraping and can potentially cause a lawsuit
+
 ## Requirements
 
 **Local Environment**
