@@ -19,13 +19,15 @@
 
 ## Installation
 
-1. Download & install NodeJS (https://nodejs.org/de/)
-  * Alternativ you can use Homebrew (https://brew.sh/index_de) to install node on Mac. Go to Terminal and paste `brew update && brew install node` to update **brew** and install **NodeJS**
-2. Check if Node and NPM is installed properly
-  * Type `node -v` in Terminal to check NodeJS (You should see a version number)
-  * Type `npm -v` in Terminal to check NPM-Manager (You should see a version number)
-3. Install required NPM-Packages
-  * Type `npm install puppeteer minimist` in Terminal
+1. Download main file [get_mreids.js](https://github.com/jpigla/MREIDs-from-SERPs/blob/master/get_mreids.js) with "Right save as..." in new folder called "**mreids**" within your home directory
+2. Check if Node and NPM are already installed
+  * Open Terminal
+  * Type `node -v` in Terminal to check NodeJS version number (and if installed already)
+  * Type `npm -v` in Terminal to check NPM-Manager version number (and if installed already)
+  * **If not**, install Homebrew (from https://brew.sh/index_de) and then NodeJS with `brew update && brew install node`
+3. Within Terminal move to that folder (type `cd mreids/`)
+4. Install required NPM packages, type `npm install puppeteer minimist` in Terminal
+
 
 ## Usage
 
@@ -35,7 +37,7 @@
 **Examples**
 
 * `node get_mreids.js --kw=firefox`
-* `node get_mreids.js --kw=bmw`
+* `node get_mreids.js --kw=barack+obama`
 
 **What happens here**
 
@@ -48,9 +50,16 @@
 
 ## Help & Information
 
-If something breaks or errors occur during runtime, please ask Philipp at hello@jpigla.de.
+* If something breaks or errors occur during runtime, please ask Philipp at hello@jpigla.de.
+* Please use https://knowledgegraphsearch.com/ for ultimate verification of MREID
 
-**Version 1** (02.10.2019)
+
+### Changelog
+
+**04.10.2019**
+* Fixed extraction of MREID from SERP (**new way** because Google changed data available in SERPs)
+
+**02.10.2019**
 * Initial Upload
 * Functional version
 
