@@ -19,7 +19,7 @@
 
 ## Installation
 
-1. Download main file [get_mreids.js](https://github.com/jpigla/MREIDs-from-SERPs/blob/master/get_mreids.js) with "Right save as..." in new folder called "**mreids**" within your home directory
+1. Download main file [get_mreids.js](https://raw.githubusercontent.com/jpigla/MREIDs-from-SERPs/master/get_mreids.js) with "Right save as..." in new folder called "**mreids**" within your home directory
 2. Check if Node and NPM are already installed
   * Open Terminal
   * Type `node -v` in Terminal to check NodeJS version number (and if installed already)
