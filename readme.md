@@ -19,24 +19,27 @@
 
 ## Installation
 
-1. Download main file [get_mreids.js](https://raw.githubusercontent.com/jpigla/MREIDs-from-SERPs/master/get_mreids.js) with "Right click and save as ..." in new folder called "**mreids**" within your home directory
+1. Download [latest project release](https://github.com/jpigla/MREIDs-from-SERPs/releases/latest), extract and (if desired) move folder to your home directory
 2. Check if Node and NPM are already installed
   * Open Terminal
   * Type `node -v` in Terminal to check NodeJS version number (and if installed already)
   * Type `npm -v` in Terminal to check NPM-Manager version number (and if installed already)
-  * **If not**, install Homebrew (from https://brew.sh/index_de) and then NodeJS with `brew update && brew install node`
-3. Within Terminal move to that folder (type `cd mreids/`)
-4. Install required NPM packages, type `npm install puppeteer minimist` in Terminal
+  * **If not**, install Homebrew (from https://brew.sh/index_de; Mac) and then NodeJS with `brew update && brew install node`
+3. In Terminal move to project folder (type `cd folder/` if you named the project folder "folder")
+4. Install required NPM packages, type `npm install` in Terminal
 
 
 ## Usage
 
 **Run script with arguments**
-`node get_mreids.js --kw=<KEYWORD>`
+* `npm run scrape -- --kw=<KEYWORD>`
+* `node get_mreids.js --kw=<KEYWORD>`
 
 **Examples**
 
+* `npm run scrape -- --kw=firefox`
 * `node get_mreids.js --kw=firefox`
+* `npm run scrape -- --kw=barack+obama`
 * `node get_mreids.js --kw=barack+obama`
 
 **What happens here**
@@ -56,8 +59,11 @@
 
 ### Changelog
 
+**11.10.2019**
+* Enhance extraction of MREID from SERP (some entity SERPs show MREID differently, now catch 'em all!) 
+
 **04.10.2019**
-* Fixed extraction of MREID from SERP (**new way** because Google changed data available in SERPs)
+* Fix extraction of MREID from SERP (different approach because of layout change in SERP)
 
 **02.10.2019**
 * Initial Upload

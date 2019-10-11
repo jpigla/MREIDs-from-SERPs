@@ -40,10 +40,10 @@ async function go_and_extract_entity_1(browser,page,url,keyword){
 
         try {
             try {
-                dataAttribute_tmp = document.getElementsByClassName("bia");
-                dataAttribute_tmp = dataAttribute_tmp[dataAttribute_tmp.length-1];
+                dataAttribute_tmp = document.getElementsByClassName("DssFqf OIQuDd")[0];
                 dataAttribute_tmp = dataAttribute_tmp.getAttribute('href');
-                dataAttribute = dataAttribute_tmp.split('%252C')[2].split('&vet')[0];
+                dataAttribute_tmp = dataAttribute_tmp.match("%3D%2F(.*?)%26hl");
+                dataAttribute = dataAttribute_tmp[1];
             } catch (e) { dataAttribute = "No MREID found!";}
 
             if (dataAttribute == "_"){
@@ -56,12 +56,12 @@ async function go_and_extract_entity_1(browser,page,url,keyword){
             }
 
             name_of_entity = document.getElementsByClassName('kno-ecr-pt kno-fb-ctx PZPZlf gsmt')[0].innerText;
-            if (name_of_entity.includes('\n') == true){name_of_entity = name_of_entity.replace('\n',' ');}
+            if (name_of_entity.includes('\n') == true) {
+                name_of_entity = name_of_entity.replace('\n', ' ');
+            }
 
-            // var re = new RegExp('\;card_id:(.*?)\;');
-            // var r  = dataAttribute.match(re);
             if (dataAttribute)
-                mreid = dataAttribute.replace(/%252F/g, '/');
+                mreid = dataAttribute.replace(/%2F/g, '/');
         } catch (e) {
             name_of_entity = keyword;
             mreid = "0";
@@ -107,10 +107,10 @@ async function go_and_extract_entity(browser,url,keyword){
 
         try {
             try {
-                dataAttribute_tmp = document.getElementsByClassName("bia");
-                dataAttribute_tmp = dataAttribute_tmp[dataAttribute_tmp.length-1];
+                dataAttribute_tmp = document.getElementsByClassName("DssFqf OIQuDd")[0];
                 dataAttribute_tmp = dataAttribute_tmp.getAttribute('href');
-                dataAttribute = dataAttribute_tmp.split('%252C')[2].split('&vet')[0];
+                dataAttribute_tmp = dataAttribute_tmp.match("%3D%2F(.*?)%26hl");
+                dataAttribute = dataAttribute_tmp[1];
             } catch (e) { dataAttribute = "No MREID found!";}
 
             if (dataAttribute == "_"){
@@ -123,12 +123,12 @@ async function go_and_extract_entity(browser,url,keyword){
             }
             
             name_of_entity = document.getElementsByClassName('kno-ecr-pt kno-fb-ctx PZPZlf gsmt')[0].innerText;
-            if (name_of_entity.includes('\n') == true){name_of_entity = name_of_entity.replace('\n',' ');}
+            if (name_of_entity.includes('\n') == true) {
+                name_of_entity = name_of_entity.replace('\n', ' ');
+            }
 
-            // var re = new RegExp('\;card_id:(.*?)\;');
-            // var r  = dataAttribute.match(re);
             if (dataAttribute)
-                mreid = dataAttribute.replace(/%252F/g, '/');
+                mreid = dataAttribute.replace(/%2F/g, '/');
         } catch (e) {
             name_of_entity = keyword;
             mreid = "0";
