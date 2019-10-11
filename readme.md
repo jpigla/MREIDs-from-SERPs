@@ -45,11 +45,11 @@
 **What happens here**
 
 * Puppeteer (Headless Browser; Chromium) opens first SERP with input keyword
-* We extract MREID if available and look for "Über XX weitere ansehen" Link in Knowledge-Graph
+* We extract MREID if available and look for "Über XX weitere ansehen" link in Knowledge-Graph
 * We click that link and get a carousel of entities on next SERP
 * We extract urls and names of entities from carousel
 * We open each url in new tab, wait for load-event and extract MREID
-* We clode Browser and export List to CSV / Terminal
+* We close Browser and export list to CSV / Terminal
 
 ## Help & Information
 
@@ -59,13 +59,13 @@
 
 ### Changelog
 
-**11.10.2019**
+**11.10.2019** (1.1.1)
 * Enhance extraction of MREID from SERP (some entity SERPs show MREID differently, now catch 'em all!) 
 
-**04.10.2019**
+**04.10.2019** (1.0.1)
 * Fix extraction of MREID from SERP (different approach because of layout change in SERP)
 
-**02.10.2019**
+**02.10.2019** (1.0)
 * Initial Upload
 * Functional version
 
