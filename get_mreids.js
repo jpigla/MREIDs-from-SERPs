@@ -176,7 +176,7 @@ async function click_carousel_link(page,entity_link_selector) {
 
 async function get_entity_links(page) {
 
-    const xpath_expression_url = '//g-scrolling-carousel/div/div/div/a/@href';
+    const xpath_expression_url = '//g-scrolling-carousel/div[1]/div/div/a/@href';
 
     await page.waitForXPath(xpath_expression_url);
     const carousel_urls = await page.$x(xpath_expression_url);
@@ -193,7 +193,7 @@ async function get_entity_links(page) {
 
 async function get_entity_name(page) {
 
-    const xpath_expression_name = '//g-scrolling-carousel/div[1]/div/div/a/div/div[3]';
+    const xpath_expression_name = '//g-scrolling-carousel/div[1]/div/div/a';
 
     await page.waitForXPath(xpath_expression_name);
     const carousel_names1 = await page.$x(xpath_expression_name);
