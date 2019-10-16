@@ -1,6 +1,6 @@
 {
   "name": "mreids-from-serps",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Get MREIDs from Google SERPs (2019)",
   "main": "get_mreids.js",
   "dependencies": {
