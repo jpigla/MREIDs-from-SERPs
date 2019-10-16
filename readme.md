@@ -59,6 +59,9 @@
 
 ### Changelog
 
+**16.10.2019** (1.1.2)
+* Fix Xpath for carousel extraction
+
 **11.10.2019** (1.1.1)
 * Enhance extraction of MREID from SERP (some entity SERPs show MREID differently, now catch 'em all!) 
 
