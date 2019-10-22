@@ -59,7 +59,7 @@
 
 ### Changelog
 
-**22.10.2019** (1.1.3)
+**22.10.2019** (1.1.3, 1.2.3)
 * Fix Xpath for carousel extraction
 * Add argument for headless (optional)
 
