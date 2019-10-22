@@ -32,13 +32,13 @@
 ## Usage
 
 **Run script with arguments**
-* `npm run scrape -- --kw=<KEYWORD>`
-* `node get_mreids.js --kw=<KEYWORD>`
+* `npm run scrape -- --kw=<KEYWORD> (--headless=false)`
+* `node get_mreids.js --kw=<KEYWORD> (--headless=false)`
 
 **Examples**
 
-* `npm run scrape -- --kw=firefox`
-* `node get_mreids.js --kw=firefox`
+* `npm run scrape -- --kw=firefox --headless=false`
+* `node get_mreids.js --kw=firefox --headless=false`
 * `npm run scrape -- --kw=barack+obama`
 * `node get_mreids.js --kw=barack+obama`
 
@@ -60,7 +60,8 @@
 ### Changelog
 
 **22.10.2019** (1.1.3)
-* Fix Xpath for carousel extraction 
+* Fix Xpath for carousel extraction
+* Add argument for headless (optional)
 
 **16.10.2019** (1.1.2)
 * Fix Xpath for carousel extraction

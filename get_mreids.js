@@ -218,8 +218,15 @@ async function get_entity_name(page) {
 
 (async function() {
     const keyword = argv.kw;
+    let headless_arg = argv.headless;
 
-    await puppeteer.launch({headless: true, args: ['--incognito']}).then(async browser => {
+    if (headless_arg == undefined || headless_arg !== "false") {
+        headless_value = true;
+    } else if (headless_arg == "false") {
+        headless_value = false;
+    }
+
+    await puppeteer.launch({headless: headless_value, args: ['--incognito']}).then(async browser => {
 
         entities = new Object();
 
