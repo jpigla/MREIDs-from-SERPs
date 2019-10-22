@@ -59,6 +59,9 @@
 
 ### Changelog
 
+**22.10.2019** (1.1.3)
+* Fix Xpath for carousel extraction 
+
 **16.10.2019** (1.1.2)
 * Fix Xpath for carousel extraction
 
