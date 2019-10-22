@@ -219,7 +219,7 @@ async function get_entity_name(page) {
 (async function() {
     const keyword = argv.kw;
 
-    await puppeteer.launch({headless: false, args: ['--incognito']}).then(async browser => {
+    await puppeteer.launch({headless: true, args: ['--incognito']}).then(async browser => {
 
         entities = new Object();
 
